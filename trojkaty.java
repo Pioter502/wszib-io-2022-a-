@@ -3,12 +3,49 @@
 */
 
 class Trojkaty {
+        /**
+        * Funkcja zwraca ile par odcinków trójkąta ma jednakową długość.
+        * @param {float} a - Długość pierwszego boku.
+        * @param {float} b - Długość drugiego boku.
+        * @param {float} c - Długość trzeciego boku.
+        */
+       public static int ileJednakowych(float a, float b, float c){
+           int jednakowe = 0; // tutaj zliczamy ile jest jednakowych bokow
+           if (a == b) {
+              jednakowe++;
+           }
+           if (b == c) {
+              jednakowe++;
+           }
+           return jednakowe;
+       }
+
     /**
      * Funkcja do sprawdzenia czy trójkąt o podanych bokach może zostać zbudowany.
      * @param {float} a - Długość pierwszego boku.
      * @param {float} b - Długość drugiego boku.
      * @param {float} c - Długość trzeciego boku.
      */
+
+                /**
+                * Funkcja zwraca ile par odcinków trójkąta ma jednakową długość.
+                * @param {float} a - Długość pierwszego boku.
+                * @param {float} b - Długość drugiego boku.
+                * @param {float} c - Długość trzeciego boku.
+                */
+               public static int ileJednakowych(float a, float b, float c){
+                   int jednakowe = 0; // tutaj zliczamy ile jest jednakowych bokow
+                   if (a == b) {
+                      jednakowe++;
+                   }
+                   if (b == c) {
+                      jednakowe++;
+                   }
+                   return jednakowe;
+               }
+         }
+         // TODO: tutaj trzeba bedzie dopisac inne przypadki
+
 
 
        public static boolean czyIstniejeTrojkat(float a, float b, float c){
@@ -34,6 +71,7 @@ class Trojkaty {
 	}        
 
  // TODO: tutaj trzeba bedzie dopisac inne przypadki
+
     }
     /** Wyświetla ekran pomocy */
     public static void pomoc(){
